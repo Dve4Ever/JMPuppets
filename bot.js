@@ -15,7 +15,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '+coin') {
+    if (message.content === '+coinflip') {
         if(coin === 1) {message.channel.send('Heads!');}
             else {message.channel.send('Tails!');}
   	}
