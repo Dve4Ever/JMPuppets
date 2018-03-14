@@ -7,8 +7,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
+    if (message.content === '+ping') {
     	message.channel.send('pong');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'Lol') {
+    	message.channel.send('?purge 2');
   	}
 });
 
