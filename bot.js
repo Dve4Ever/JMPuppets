@@ -8,12 +8,12 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '+ping') {
-    	message.channel.send('pong');
+    	message.channel.send('+ping');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'Lol') {
+    if (message.content === 'hi') {
     	message.channel.send('?purge 2');
   	}
 });
