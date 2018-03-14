@@ -1,6 +1,3 @@
-var draw = function() {
-var coin = round(random(1,2));
-};
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -16,8 +13,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '+coinflip') {
+        var coin = round(random(1,2));
         if(coin === 1) {message.channel.send('Heads!');}
-            else {message.channel.send('Tails!');}
+        else {message.channel.send('Tails!');}
   	}
 });
 
